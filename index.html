@@ -49,7 +49,7 @@
             
             <!-- Video Asset (Comportando-se como elemento contido, não background esticado) -->
             <video id="hero-video" src="video_keyframe.mp4" muted
-                playsinline class="absolute top-1/2 -translate-y-1/2 right-0 md:right-[-2vw] w-[140vw] md:w-[80vw] h-[80vh] md:h-[95vh] object-contain mix-blend-darken -z-20 max-w-none"></video>
+                playsinline class="absolute top-1/2 -translate-y-1/2 right-0 md:right-[-2vw] w-[140vw] md:w-[80vw] h-[80vh] md:h-[95vh] object-contain mix-blend-normal md:mix-blend-darken -z-20 max-w-none"></video>
             
             <!-- Gradiente suave apenas para garantir o contraste do texto -->
             <div class="absolute inset-y-0 left-0 w-full md:w-[45vw] bg-gradient-to-r from-[#f9fafb] via-[#f9fafb]/90 to-transparent -z-10 pointer-events-none"></div>
@@ -58,7 +58,7 @@
             <div class="w-full px-4 pt-32 pb-16 md:px-12 max-w-[1600px] mx-auto z-10 flex flex-col justify-center">
                 <div class="max-w-[45ch] stagger-2">
                     <span
-                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-200 text-[10px] md:text-xs font-semibold tracking-wide text-slate-500 mb-6 md:mb-8 uppercase bg-white/50 backdrop-blur-md shadow-sm">
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-200 text-[10px] md:text-xs font-semibold tracking-wide text-slate-500 mb-6 md:mb-8 uppercase bg-white/70 md:bg-white/50 backdrop-blur-sm md:backdrop-blur-md shadow-sm">
                         <i class="ph ph-sparkle"></i> Novo Lançamento
                     </span>
 
@@ -79,7 +79,7 @@
                             class="bg-zinc-950 text-white px-6 py-3 md:px-8 md:py-4 rounded-full text-sm md:text-base font-medium hover:bg-zinc-800 hover:scale-[0.98] transition-all duration-300 flex items-center gap-2 shadow-lg shadow-zinc-900/20">
                             Explorar <i class="ph ph-arrow-right"></i>
                         </button>
-                        <div class="text-xs md:text-sm font-mono text-slate-600 font-medium px-4 py-2 bg-white/40 backdrop-blur-md rounded-full border border-white/60">
+                        <div class="text-xs md:text-sm font-mono text-slate-600 font-medium px-4 py-2 bg-white/60 md:bg-white/40 backdrop-blur-sm md:backdrop-blur-md rounded-full border border-white/60">
                             K950 Off-White
                         </div>
                     </div>
@@ -210,7 +210,7 @@
     <!-- Compatibility Section -->
     <section class="w-full px-4 py-24 md:px-8 max-w-[1400px] mx-auto border-t border-slate-200/60 mt-12 relative overflow-hidden">
         <!-- Glow effect -->
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-emerald-400/5 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
+        <div class="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-emerald-400/5 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
         
         <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 stagger-1">
             <div>
