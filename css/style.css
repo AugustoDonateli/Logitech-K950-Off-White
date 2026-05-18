@@ -1,0 +1,98 @@
+/* Anti-Slop: Clean, hardware-accelerated transitions */
+        body {
+            background-color: #f9fafb;
+            color: #09090b;
+        }
+
+        .liquid-glass {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+        }
+
+        .bento-card {
+            background: #ffffff;
+            border: 1px solid rgba(226, 232, 240, 0.5);
+            /* border-slate-200/50 */
+            border-radius: 2.5rem;
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bento-card:hover {
+            transform: translateY(-4px) scale(1.01);
+            box-shadow: 0 30px 50px -20px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Perpetual Motion: Wave animation for sound card */
+        .sound-bar {
+            width: 4px;
+            background-color: #09090b;
+            border-radius: 2px;
+            animation: wave 1.2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+        }
+
+        .sound-bar:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .sound-bar:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .sound-bar:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+
+        .sound-bar:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+
+        .hover-wave:hover .sound-bar {
+            animation: none;
+            transform: scaleY(0.2);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Staggered load in */
+        .stagger-1 {
+            animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards;
+            opacity: 0;
+        }
+
+        .stagger-2 {
+            animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+            opacity: 0;
+        }
+
+        .stagger-3 {
+            animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+            opacity: 0;
+        }
+
+        .stagger-4 {
+            animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+            opacity: 0;
+        }
+
+        @keyframes fade-in-up {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Scroll hijacking hide scrollbar for clean look */
+        ::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }

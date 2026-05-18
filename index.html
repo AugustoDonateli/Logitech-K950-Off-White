@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logitech Signature Slim K950 | O Teclado Definitivo</title>
+    <meta name="description"
+        content="Experimente o conforto de um notebook no seu desktop com o Logitech Signature Slim K950 Branco. Digitação silenciosa, multi-device e design sustentável.">
+
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="antialiased selection:bg-zinc-950 selection:text-white overflow-x-hidden">
+
+    <!-- Navigation (Liquid Glass) -->
+    <div class="fixed top-6 left-0 w-full flex justify-center z-50 pointer-events-none">
+        <nav
+            class="liquid-glass rounded-full px-8 py-4 flex items-center gap-12 w-max max-w-[90vw] stagger-1 pointer-events-auto">
+            <div class="font-bold tracking-tight text-lg">Logitech</div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-600">
+                <a href="#features" class="hover:text-zinc-950 transition-colors">Funcionalidades</a>
+                <a href="#design" class="hover:text-zinc-950 transition-colors">Design</a>
+                <a href="#specs" class="hover:text-zinc-950 transition-colors">Especificações</a>
+            </div>
+            <button
+                class="bg-zinc-950 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:scale-[0.98] active:-translate-y-[1px] transition-transform duration-300">
+                Comprar Agora
+            </button>
+        </nav>
+    </div>
+
+    <!-- Full-bleed Hero Section (Scroll Controlled Background) -->
+    <div id="hero-scroll-container" class="relative w-full h-[400vh]">
+        <main
+            class="sticky top-0 h-[100dvh] w-full relative overflow-hidden flex items-center">
+            
+            <!-- Video Asset (Comportando-se como elemento contido, não background esticado) -->
+            <video id="hero-video" src="video_keyframe.mp4" muted
+                playsinline class="absolute top-1/2 -translate-y-1/2 right-0 md:right-[-2vw] w-[140vw] md:w-[80vw] h-[80vh] md:h-[95vh] object-contain mix-blend-darken -z-20 max-w-none"></video>
+            
+            <!-- Gradiente suave apenas para garantir o contraste do texto -->
+            <div class="absolute inset-y-0 left-0 w-full md:w-[45vw] bg-gradient-to-r from-[#f9fafb] via-[#f9fafb]/90 to-transparent -z-10 pointer-events-none"></div>
+            
+            <!-- Content -->
+            <div class="w-full px-4 pt-32 pb-16 md:px-12 max-w-[1600px] mx-auto z-10 flex flex-col justify-center">
+                <div class="max-w-[45ch] stagger-2">
+                    <span
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-200 text-xs font-semibold tracking-wide text-slate-500 mb-8 uppercase bg-white/50 backdrop-blur-md shadow-sm">
+                        <i class="ph ph-sparkle"></i> Novo Lançamento
+                    </span>
+
+                    <!-- Massive Typography -->
+                    <h1 class="text-6xl md:text-8xl tracking-tighter leading-[0.9] font-bold text-zinc-950 mb-6 drop-shadow-sm">
+                        Foco.<br>
+                        Silêncio.<br>
+                        Signature.
+                    </h1>
+
+                    <p class="text-lg text-slate-700 max-w-[40ch] leading-relaxed mb-10 font-medium drop-shadow-sm">
+                        A experiência premium de digitação de um notebook, agora em um teclado sem fio de perfil
+                        ultrabaixo. Projetado para alternar entre seus mundos com um toque.
+                    </p>
+
+                    <div class="flex flex-wrap items-center gap-6">
+                        <button
+                            class="bg-zinc-950 text-white px-8 py-4 rounded-full font-medium hover:bg-zinc-800 hover:scale-[0.98] transition-all duration-300 flex items-center gap-2 shadow-lg shadow-zinc-900/20">
+                            Explorar <i class="ph ph-arrow-right"></i>
+                        </button>
+                        <div class="text-sm font-mono text-slate-600 font-medium px-4 py-2 bg-white/40 backdrop-blur-md rounded-full border border-white/60">
+                            K950 Off-White
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contextual UI Badge (Dynamic Island style) -->
+            <div
+                class="absolute bottom-12 right-12 liquid-glass rounded-2xl p-4 hidden md:flex items-center gap-4 hover:scale-[1.02] transition-transform cursor-default z-10">
+                <div
+                    class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600">
+                    <i class="ph ph-battery-full text-xl"></i>
+                </div>
+                <div>
+                    <div class="text-xs font-semibold text-slate-600 uppercase tracking-wider">Autonomia</div>
+                    <div class="text-sm font-bold text-zinc-950">Até 36 meses</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Bento Grid 2.0 Feature Section -->
+    <section id="features" class="w-full px-4 py-24 md:px-8 max-w-[1400px] mx-auto">
+        <div class="mb-16 md:pl-4 stagger-4">
+            <h2 class="text-4xl md:text-5xl tracking-tighter font-bold text-zinc-950">Engenharia Invisível</h2>
+            <p class="text-slate-500 mt-4 max-w-[50ch]">Tecnologia que desaparece. Deixando apenas a produtividade e um
+                fluxo de trabalho contínuo em múltiplos dispositivos.</p>
+        </div>
+
+        <!-- Bento Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[400px]">
+
+            <!-- Card 1: Multi-Device (Wide) -->
+            <div class="md:col-span-2 bento-card p-10 flex flex-col justify-between group">
+                <div class="flex justify-between items-start">
+                    <div
+                        class="w-12 h-12 rounded-full border border-slate-100 bg-slate-50 flex items-center justify-center text-zinc-950 shadow-sm">
+                        <i class="ph ph-devices text-xl"></i>
+                    </div>
+                    <!-- Indicator dot -->
+                    <div class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse-slow"></div>
+                </div>
+
+                <!-- Infinite loop visual for multi-device -->
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full overflow-hidden">
+                    <div
+                        class="flex gap-8 pr-8 w-max animate-carousel opacity-20 group-hover:opacity-40 transition-opacity duration-700">
+                        <i class="ph ph-laptop text-[120px] text-zinc-950 shrink-0"></i>
+                        <i class="ph ph-desktop text-[120px] text-zinc-950 shrink-0"></i>
+                        <i class="ph ph-device-tablet text-[120px] text-zinc-950 shrink-0"></i>
+                        <i class="ph ph-device-mobile text-[120px] text-zinc-950 shrink-0"></i>
+                        <i class="ph ph-laptop text-[120px] text-zinc-950 shrink-0"></i>
+                        <i class="ph ph-desktop text-[120px] text-zinc-950 shrink-0"></i>
+                        <i class="ph ph-device-tablet text-[120px] text-zinc-950 shrink-0"></i>
+                        <i class="ph ph-device-mobile text-[120px] text-zinc-950 shrink-0"></i>
+                    </div>
+                </div>
+
+                <div class="relative z-10 mt-auto">
+                    <h3 class="text-2xl font-semibold tracking-tight text-zinc-950">Easy-Switch™</h3>
+                    <p class="text-slate-500 mt-2">Alterne instantaneamente entre seu computador, tablet e smartphone
+                        com o toque de uma tecla.</p>
+                </div>
+            </div>
+
+            <!-- Card 2: Silent Typing (Interactive Wave) -->
+            <div class="bento-card p-10 flex flex-col justify-between hover-wave group cursor-crosshair">
+                <div
+                    class="w-12 h-12 rounded-full border border-slate-100 bg-slate-50 flex items-center justify-center text-zinc-950 shadow-sm">
+                    <i class="ph ph-waves text-xl"></i>
+                </div>
+
+                <div class="flex items-end justify-center gap-2 h-32 my-auto">
+                    <div class="sound-bar origin-bottom h-8"></div>
+                    <div class="sound-bar origin-bottom h-16"></div>
+                    <div class="sound-bar origin-bottom h-24"></div>
+                    <div class="sound-bar origin-bottom h-12"></div>
+                    <div class="sound-bar origin-bottom h-20"></div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold tracking-tight text-zinc-950">Foco Absoluto</h3>
+                    <p class="text-slate-500 mt-2 text-sm">Teclas incrivelmente silenciosas que cancelam distrações
+                        acústicas. <span class="text-xs text-slate-400 block mt-1">(Passe o mouse)</span></p>
+                </div>
+            </div>
+
+            <!-- Card 3: Macro Detail (Image based) -->
+            <div class="bento-card md:col-span-1 p-0 overflow-hidden relative group">
+                <img src="detail.png" alt="Detalhe das teclas"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-10 w-full text-white">
+                    <h3 class="text-xl font-semibold tracking-tight">Perfil Ultrabaixo</h3>
+                    <p class="text-white/70 mt-2 text-sm">Switches tesoura premium que mimetizam a resposta tátil
+                        perfeita de um notebook.</p>
+                </div>
+            </div>
+
+            <!-- Card 4: Logi Options+ (Dashboard Data styling) -->
+            <div class="md:col-span-2 bento-card p-10 flex items-center justify-between bg-zinc-950 text-white group">
+                <div class="max-w-[40ch]">
+                    <div
+                        class="w-12 h-12 rounded-full border border-white/10 bg-white/5 flex items-center justify-center text-white mb-8">
+                        <i class="ph ph-command text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold tracking-tight">Ações Inteligentes</h3>
+                    <p class="text-white/60 mt-2">Automatize tarefas repetitivas. Com o Logi Options+, um único clique
+                        pode abrir todos os aplicativos do seu fluxo de trabalho matinal.</p>
+                </div>
+
+                <!-- Data Cockpit Representation -->
+                <div class="hidden lg:flex gap-4 border-l border-white/10 pl-12 h-full flex-col justify-center">
+                    <div class="text-xs font-mono text-white/40 uppercase tracking-widest mb-2">Comandos Economizados
+                    </div>
+                    <div class="text-6xl font-mono tracking-tighter">4,281</div>
+                    <div class="mt-4 flex gap-2">
+                        <div class="px-2 py-1 rounded bg-white/10 text-xs font-mono border border-white/5">CTRL</div>
+                        <div class="px-2 py-1 rounded bg-white/10 text-xs font-mono border border-white/5">SHIFT</div>
+                        <div class="px-2 py-1 rounded bg-white/10 text-xs font-mono border border-white/5">M</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Compatibility Section -->
+    <section class="w-full px-4 py-24 md:px-8 max-w-[1400px] mx-auto border-t border-slate-200/60 mt-12 relative overflow-hidden">
+        <!-- Glow effect -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-emerald-400/5 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
+        
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 stagger-1">
+            <div>
+                <h2 class="text-3xl md:text-4xl tracking-tighter font-bold text-zinc-950">Feito para tudo.</h2>
+                <p class="text-slate-500 mt-4 max-w-[50ch]">Conecte-se facilmente a quase qualquer sistema operacional. Via Bluetooth® Low Energy ou com o receptor USB Logi Bolt incluído.</p>
+            </div>
+            <div class="mt-8 md:mt-0 flex gap-4 text-slate-400">
+                <div class="flex flex-col items-center gap-1 group">
+                    <i class="ph ph-bluetooth text-3xl group-hover:text-emerald-500 transition-colors cursor-help"></i>
+                    <span class="text-[10px] font-semibold tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity">Bluetooth</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 group">
+                    <i class="ph ph-usb text-3xl group-hover:text-emerald-500 transition-colors cursor-help"></i>
+                    <span class="text-[10px] font-semibold tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity">Logi Bolt</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 stagger-2">
+            <!-- Windows -->
+            <div class="p-8 rounded-3xl bg-white border border-slate-200/60 flex flex-col items-center justify-center gap-4 hover:-translate-y-1 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)]">
+                <i class="ph ph-windows-logo text-4xl text-zinc-950"></i>
+                <span class="text-sm font-medium text-slate-600">Windows 10, 11+</span>
+            </div>
+            <!-- macOS -->
+            <div class="p-8 rounded-3xl bg-white border border-slate-200/60 flex flex-col items-center justify-center gap-4 hover:-translate-y-1 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)]">
+                <i class="ph ph-apple-logo text-4xl text-zinc-950"></i>
+                <span class="text-sm font-medium text-slate-600">macOS 11+</span>
+            </div>
+            <!-- ChromeOS / Linux -->
+            <div class="p-8 rounded-3xl bg-white border border-slate-200/60 flex flex-col items-center justify-center gap-4 hover:-translate-y-1 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)]">
+                <i class="ph ph-laptop text-4xl text-zinc-950"></i>
+                <span class="text-sm font-medium text-slate-600 text-center">ChromeOS<br>Linux®</span>
+            </div>
+            <!-- Mobile -->
+            <div class="p-8 rounded-3xl bg-white border border-slate-200/60 flex flex-col items-center justify-center gap-4 hover:-translate-y-1 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)]">
+                <div class="flex gap-2">
+                    <i class="ph ph-device-mobile text-4xl text-zinc-950"></i>
+                    <i class="ph ph-device-tablet text-4xl text-zinc-950"></i>
+                </div>
+                <span class="text-sm font-medium text-slate-600 text-center">iPadOS, iOS<br>Android™</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Specs -->
+    <section id="specs" class="w-full px-4 py-24 md:px-8 max-w-[1400px] mx-auto border-t border-slate-200/60">
+        <h2 class="text-3xl md:text-4xl tracking-tighter font-bold text-zinc-950 mb-16">Especificações Técnicas</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <!-- Column 1 -->
+            <div>
+                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] mb-6">Dimensões</h3>
+                <ul class="space-y-4 text-sm text-slate-600">
+                    <li class="flex justify-between border-b border-slate-100 pb-3">
+                        <span>Altura</span> <span class="font-mono text-zinc-950 font-medium">134,8 mm</span>
+                    </li>
+                    <li class="flex justify-between border-b border-slate-100 pb-3">
+                        <span>Largura</span> <span class="font-mono text-zinc-950 font-medium">433,8 mm</span>
+                    </li>
+                    <li class="flex justify-between border-b border-slate-100 pb-3">
+                        <span>Profundidade</span> <span class="font-mono text-zinc-950 font-medium">23,1 mm</span>
+                    </li>
+                    <li class="flex justify-between pb-3">
+                        <span>Peso (c/ pilhas)</span> <span class="font-mono text-zinc-950 font-medium">685 g</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Column 2 -->
+            <div>
+                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] mb-6">Bateria</h3>
+                <ul class="space-y-4 text-sm text-slate-600">
+                    <li class="flex justify-between border-b border-slate-100 pb-3">
+                        <span>Tipo</span> <span>2x AAA (Inclusas)</span>
+                    </li>
+                    <li class="flex justify-between border-b border-slate-100 pb-3">
+                        <span>Autonomia</span> <span class="text-emerald-600 font-bold">Até 36 meses</span>
+                    </li>
+                    <li class="flex flex-col gap-1 pb-3">
+                        <span class="text-xs text-slate-400 leading-relaxed mt-2">* A vida útil das pilhas varia de acordo com o usuário e as condições de computação.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div>
+                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] mb-6">Recursos</h3>
+                <ul class="space-y-4 text-sm text-slate-600">
+                    <li class="flex items-center gap-3 border-b border-slate-100 pb-3">
+                        <i class="ph-fill ph-check-circle text-emerald-500 text-lg"></i> Teclado numérico completo
+                    </li>
+                    <li class="flex items-center gap-3 border-b border-slate-100 pb-3">
+                        <i class="ph-fill ph-check-circle text-emerald-500 text-lg"></i> Teclas Easy-Switch (3 devs)
+                    </li>
+                    <li class="flex items-center gap-3 border-b border-slate-100 pb-3">
+                        <i class="ph-fill ph-check-circle text-emerald-500 text-lg"></i> Compatível Logi Options+
+                    </li>
+                    <li class="flex items-center gap-3 pb-3">
+                        <i class="ph-fill ph-check-circle text-emerald-500 text-lg"></i> Digitação super silenciosa
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="bg-emerald-50/50 p-8 rounded-3xl border border-emerald-100/50 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xs font-bold text-emerald-600 uppercase tracking-[0.2em] mb-6">Sustentabilidade</h3>
+                    <div class="flex items-start gap-4 mb-6">
+                        <i class="ph ph-recycle text-2xl text-emerald-600 mt-1"></i>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            <span class="font-bold text-zinc-950 block mb-1">Plástico Reciclado</span>
+                            O modelo Off-White utiliza 48% de material reciclado pós-consumo, dando uma segunda vida a eletrônicos.
+                        </p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <i class="ph ph-leaf text-2xl text-emerald-600 mt-1"></i>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            <span class="font-bold text-zinc-950 block mb-1">Carbono Neutro</span>
+                            Produto certificado CarbonNeutral®. A pegada de carbono foi reduzida a zero.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-slate-200 mt-24 py-12 px-4 md:px-8 bg-white">
+        <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="font-bold tracking-tight text-xl text-zinc-950">Logitech</div>
+            <div class="text-sm text-slate-500 font-mono">
+                Model: K950 (Off-White)
+            </div>
+            <div class="flex gap-4">
+                <a href="#"
+                    class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:bg-zinc-50 hover:text-zinc-950 transition-colors"><i
+                        class="ph ph-twitter-logo"></i></a>
+                <a href="#"
+                    class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:bg-zinc-50 hover:text-zinc-950 transition-colors"><i
+                        class="ph ph-instagram-logo"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll-controlled video script -->
+    <script src="js/video-scroll.js"></script>
+</body>
+
+</html>
